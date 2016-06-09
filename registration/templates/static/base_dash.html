@@ -96,14 +96,25 @@ http://www.templatemo.com/preview/templatemo_415_dashboard
               <li><a href="{% url 'register_student' %}">Add a Student</a></li>
               <li><a href="{% url 'register_student_bulk' %}">Bulk Upload</a></li>
               <li><a href="{% url 'list' %}">List Students</a></li>
-
             </ul>
           </li>
 
+
+
+                <li class="sub open">
+            <a href="javascript:;">
+              <i class="fa fa-database"></i> filter <div class="pull-right"><span class="caret"></span></div>
+            </a>
+            <ul class="templatemo-submenu">
+              <li><a href="{% url 'filter_internal' %}">internalfilter</a></li>
+              <li><a href="{% url 'filter_external' %}">external filter</a></li>
+            </ul>
+          </li>
           <li><a href="{% url 'preferences' %}"><i class="fa fa-cog"></i>Preferences</a></li>
           <li><a href="{% url 'logout' %}"><i class="fa fa-sign-out"></i>Sign Out</a></li>
         </ul>
       </div><!--/.navbar-collapse -->
+
 
     </div>
 {% block body %}
